@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="40dp"
+    android:layout_marginRight="20dp"
+    android:background="@android:drawable/alert_light_frame"
+    app:cardCornerRadius="10dp"
+    tools:context=".fragments.loginFragment">
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/loginViewsMargin">
+
+            <ImageView
+
+                style="@style/headerTextPrimary"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_transparent"
+                android:textColor="#20d2bb" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center_horizontal"
+
+                    android:text="Admin Login"
+                    android:textColor="#20d2bb"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#20d2bb"
+                    android:hint="Email Id"
+
+                    android:inputType="textEmailAddress"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="#20d2bb" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="#20d2bb"
+                android:text="L o g i n"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_forgot_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Forgot Password? Click Here"
+                android:textAlignment="textEnd"
+                android:textColor="#20d2bb"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/registerTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:text="New here? Register"
+                android:textColor="#20d2bb"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

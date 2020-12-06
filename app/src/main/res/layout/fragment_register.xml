@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="40dp"
+    tools:context=".fragments.RegisterFragment"
+    android:background="@android:drawable/alert_light_frame"
+    app:cardCornerRadius="10dp">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/linearParent"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/loginViewsMargin">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="120dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+
+                    android:gravity="center_horizontal"
+
+                    android:text="Register"
+                    android:textColor="#20d2bb"
+                    android:textSize="28sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+
+                android:layout_marginTop="5dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/modifiedEditText"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:autofillHints="Choose image"
+                    android:maxLines="1"
+                    android:src="@drawable/logo_transparent"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/nameInput"
+                    style="@style/modifiedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_ "
+                    android:hint="Full Name"
+                    android:textSize="16sp"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                <EditText
+                    android:id="@+id/emailInput"
+
+                    style="@style/modifiedEditText"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Id"
+                    android:textSize="16sp"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--    <com.google.android.material.textfield.TextInputLayout-->
+            <!--        style="@style/parent"-->
+            <!--        android:layout_marginTop="@dimen/signup_text_margin_top">-->
+            <!--        <EditText-->
+            <!--            style="@style/modifiedEditText"-->
+            <!--            android:inputType="text"-->
+            <!--            android:maxLines="1"-->
+            <!--            android:hint="Gender"/>-->
+            <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                <!--                <Spinner-->
+                <!--                    android:id="@+id/genderInput"-->
+
+                <!--                    style="@style/modifiedEditText"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@+id/emailInput"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:textSize="16sp"-->
+                <!--                    android:layout_marginBottom="10dp"-->
+                <!--                    android:maxLines="1" />-->
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/radio_but"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+
+                        android:text="Gender"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+                        android:text="Female" />
+                </RadioGroup>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                <EditText
+                    android:id="@+id/dobInput"
+
+                    style="@style/modifiedEditText"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Date Of Birth"
+                    android:textSize="16sp"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:maxLines="1"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                <EditText
+                    android:id="@+id/phoneInput"
+
+                    style="@style/modifiedEditText"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                <EditText
+                    android:id="@+id/passwordInput"
+
+                    style="@style/modifiedEditText"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:textColorHint="#20d2bb"
+                android:layout_marginTop="@dimen/signup_text_margin_top">
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/regBtn"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="#20d2bb"
+                android:text="R e g i s t e r"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <!--            <TextView-->
+            <!--                style="@style/parent"-->
+            <!--                android:layout_marginTop="@dimen/loginViewsMargin"-->
+            <!--                android:text="@string/signup_login_hint"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:textColor="@color/primaryTextColor"-->
+            <!--                android:textStyle="bold" />-->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".activities.ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@android:drawable/alert_light_frame"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/ivUcount"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/user1" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tuname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+android:textColor="@color/dot_dark_screen1"
+                            android:textStyle="bold"
+                            android:text="USER:"
+                            android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/tUcount"
+                        android:textSize="20sp"
+                        android:textColor="@color/dot_dark_screen1"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/ivPcount"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/user1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tPname"
+                            android:textSize="20sp"
+                            android:text="EXPERT:"
+
+                            android:textColor="@color/dot_dark_screen1"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <TextView
+                            android:id="@+id/tPcount"
+                            android:textSize="20sp"
+                            android:textColor="@color/dot_dark_screen1"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            layout="@layout/layout_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

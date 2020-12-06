@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">AdminAppFitness</string>
+
+    <string name="toolbar_title"> FitSpot</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="s_pref_name">package pooja.borkar.myretrofitbasicapplication.extras</string>
+    <string name="s_pref_login_status">package pooja.borkar.login_status</string>
+
+    <string name="s_pref_login_name">sh_pref_login_name</string>
+    <string name="s_pref_login_email">sh_pref_login_email</string>
+    <string name="s_pref_login_date">sh_pref_login_date</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_userlist">UserList</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_dashboard">Dashboard</string>
+
+    <!--    <string name="app_name">Login Sample</string>-->
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+    <!--    <string name="app_name">Feature Activity</string>-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+
+    <string name="slide_1_desc">Your meals and snacks on regular schedule
+        can help keep your digestive system in top shape!</string>
+
+
+    <string name="slide_2_desc"> Suggestions on diet plan,Health andd exercises!</string>
+
+
+    <string name="slide_3_desc">Reminders are keeps reminding
+        you about your health goals
+        and making you stay focuse on your activity and overall fitness!</string>
+
+    <string name="slide_4_title">Welcome!</string>
+    <string name="slide_4_desc">Over the past few years, living a healthy lifestyle has become trendy. Nowadays, being healthy means being beautiful, successful, and fit!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="step_2_of_3">Step 2 of 3</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+</resources>
